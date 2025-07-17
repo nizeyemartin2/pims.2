@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIMS Rwanda Dashboard</title>
+    <link href="dashboard2.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>PIMS Rwanda</h2>
+        <p>Post Harvest Infrastructure</p>
+        <ul>
+            <li><i class='bx bx-home'></i> Dashboard</li>
+            <li><i class='bx bx-grid-alt'></i> Overview</li>
+            <li><i class='bx bx-file'></i> Reports</li>
+            <li><i class='bx bx-line-chart'></i> Analytics</li>
+            <li class="section-title">Infrastructure</li>
+            <li><i class='bx bx-building-house'></i> Warehouses</li>
+            <li><i class='bx bx-package'></i> Collection Centers</li>
+            <li><i class='bx bx-fridge'></i> Cold Rooms</li>
+            <li><i class='bx bx-sun'></i> Drying Sites</li>
+            <li class="section-title">Management</li>
+            <li><i class='bx bx-user'></i> Staff</li>
+            <li><i class='bx bx-cog'></i> Settings</li>
+        </ul>
+        <div class="user-panel">
+            <p>Nizeyemartin2<br><small>Admin</small></p>
+            <button><a href="index.html" class="back-btn" style="text-decoration: none;">← Back to Home</a></button>
+
+            <button class="logout">Logout</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="stats">
+            <div>Total Facilities<br><span>24</span></div>
+            <div>Active Harvests<br><span>1,247</span></div>
+            <div>Storage Capacity<br><span>78%</span></div>
+            <div>Staff Members<br><span>156</span></div>
+        </div>
+
+        <div class="facilities">
+            <h3>Infrastructure Facilities</h3>
+            <div class="facility-card">Kigali Central Warehouse <span class="active">85% Active</span></div>
+            <div class="facility-card">Huye Collection Center <span class="active">67% Active</span></div>
+            <div class="facility-card">Musanze Cold Room <span class="active">92% Active</span></div>
+            <div class="facility-card">Nyagatare Drying Site <span class="maintenance">43% Maintenance</span></div>
+        </div>
+
+        <div class="quick-actions">
+            <h3>Quick Actions</h3>
+            <button class="main-action">Record New Harvest</button>
+            <button>Add New Facility</button>
+            <button>Generate Reports</button>
+            <button>System Settings</button>
+        </div>
+
+        <div class="assigned-facility">
+            <h3>Your Assigned Facility</h3>
+            <p><strong>Kigali Central Warehouse</strong></p>
+            <p>You are currently managing this facility. Access detailed reports, harvest records, and facility maintenance schedules from your management panel.</p>
+        </div>
+    </div>
+
+</body>
+</html>
