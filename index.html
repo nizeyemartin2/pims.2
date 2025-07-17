@@ -10,9 +10,10 @@
 
 <header>
     <div class="logo">
-        <img src="logo.png" alt="PIMS Logo"> <!-- Replace with your actual logo -->
+        <img src="logo.png" alt="PIMS Logo">
     </div>
-    <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="main-nav">
         <a href="#">Home</a>
         <a href="#">Warehouses</a>
         <a href="#">Collection Centers</a>
@@ -72,6 +73,13 @@
 <footer class="footer">
   <p>© 2024 PIMS Rwanda - Post Harvest Infrastructure Management System. All rights reserved.</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
